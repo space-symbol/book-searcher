@@ -1,0 +1,28 @@
+.SearchWithOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: max(30%, 200px);
+    gap: 1em;
+}
+
+.settings {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.isLoading {
+    & > *{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        opacity: 0.6;
+    }
+
+}

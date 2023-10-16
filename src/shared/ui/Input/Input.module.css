@@ -1,0 +1,50 @@
+.Wrapper {
+    width: 100%;
+}
+
+.input {
+    height: 35px;
+    width: 100%;
+    padding: 0.4em;
+    font-weight: 500;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.with_icon {
+    display: flex;
+    align-items: center;
+    background: var(--inverted-bg-color);
+    padding-right: 0.4em;
+}
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    order: 1;
+  
+}
+
+.left {
+    order: 0;
+}
+
+.icon {
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+}
+
+.readOnly * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}

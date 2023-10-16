@@ -1,0 +1,111 @@
+.BookDetails{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+
+    .imageWrapper {
+        height: max-content;
+        align-items: center;
+        align-self: start;
+        padding: 2.5em 1.5em;
+        background: #f4f2f2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+
+        .img {
+            object-fit: cover;
+            border: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 100%;
+            width: auto;
+            max-height: 350px;
+        }
+    }
+
+    .infoContainer {
+        align-self: start;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            height: 100%;
+            padding: 2em 1.5em;
+            gap: 10px;
+        }
+
+        .categories {
+            text-decoration: underline;
+
+        }
+
+        .categories, .authors {
+            color: var(--secondary-color);
+            font-size: 0.8em;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        .description {
+            padding: 0.5em;
+            font-weight: 600;
+            border: 1px solid var(--secondary-color);
+            word-break: break-word;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            max-height: 500px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            flex-grow: 1;
+            text-wrap: balance;
+        }
+
+        .empty {
+            display: flex;
+            font-weight: 400;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.back {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .BookDetails {
+        overflow: auto;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    }
+}

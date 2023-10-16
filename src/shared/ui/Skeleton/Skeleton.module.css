@@ -1,0 +1,30 @@
+.Skeleton {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: var(--skeleton-background);
+    overflow: hidden;
+    font-size: 1rem;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -150px;
+        top: 0;
+        height: 100%;
+        width: 80%;
+        background: linear-gradient(90deg, transparent, var(--skeleton-blink-color), transparent);;
+        animation: load 1.5s ease-in infinite;
+    }
+}
+
+@keyframes load {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}

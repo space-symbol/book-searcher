@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #6e6e6e;
+    --inverted-primary-color: #000000;
+    --bg-color: #000000;
+    --inverted-bg-color: #ffffff;
+
+    --font-family-main: 'Montserrat', sans-serif;
+
+    --font-size-s: 14px;
+    --font-line-s: normal;
+    --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+
+    --font-size-m: 16px;
+    --font-line-m: normal;
+    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+    --font-size-l: 24px;
+    --font-line-l: normal;
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+
+    --font-size-xl: 32px;
+    --font-line-xl: normal;
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+    --page-padding: 1em;
+
+    --skeleton-blink-color: rgba(0, 0, 0, 0.04);
+    --skeleton-background: rgba(0, 0, 0, 0.1);
+}

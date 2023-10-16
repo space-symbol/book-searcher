@@ -1,0 +1,38 @@
+.Wrapper {
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 0.5em;
+}
+
+.label {
+    color: var(--primary-color);
+    font-weight: 500;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.select {
+    cursor: pointer;
+    background: var(--inverted-bg-color);
+    outline: none;
+    color: var(--secondary-color);
+    height: 35px;
+    padding: 0.4em;
+    text-overflow: ellipsis;
+    width: 100%;
+    box-shadow: none;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.option {
+    color: var(--secondary-color);
+    background: var(--inverted-bg-color);
+    outline: none;
+}

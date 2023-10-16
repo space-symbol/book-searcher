@@ -1,0 +1,31 @@
+.Searchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0.5em;
+    gap: 1em;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-image: url('../../../shared/assets/bg/searchbar-bg.jpg?raw');
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+}
+
+
+.title {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.2em;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
